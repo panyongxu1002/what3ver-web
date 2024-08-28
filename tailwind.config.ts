@@ -1,0 +1,62 @@
+import type { Config } from 'tailwindcss';
+
+export default {
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'Roboto', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      backgroundSize: {
+        auto: 'auto',
+        cover: 'cover',
+        contain: 'contain',
+        Desktop: '1400px 670px',
+        Mobile: '430px 575px',
+        MidScreen: '815px, 600px',
+      },
+      colors: {
+        'text-primary': 'colors.text-primary',
+        'text-secondary': 'colors.text-secondary',
+        'text-disabled': 'colors.text-disabled',
+        'primary-main': 'colors.primary-main',
+        'primary-dark': 'colors.primary-dark',
+        'primary-light': 'colors.primary-light',
+        'primary-contrast': 'colors.primary-contrast',
+        'primary-hover': 'colors.primary-hover',
+        'primary-selected': 'colors.primary-selected',
+        'primary-focus': 'colors.primary-focus',
+        'primary-focusVisible': 'colors.primary-focusVisible',
+        'primary-outlinedBorder': 'colors.primary-outlinedBorder',
+        'secondary-main': 'colors.secondary-main',
+        'secondary-dark': 'colors.secondary-dark',
+        'secondary-light': 'colors.secondary-light',
+        'secondary-contrast': 'colors.secondary-contrast',
+        'error-main': 'colors.error-main',
+        'error-dark': 'colors.error-dark',
+        'error-light': 'colors.error-light',
+        'error-contrast': 'colors.error-contrast',
+        'warning-main': 'colors.warning-main',
+        'warning-dark': 'colors.warning-dark',
+        'warning-light': 'colors.warning-light',
+        'warning-contrast': 'colors.warning-contrast',
+        'info-main': 'colors.info-main',
+        'info-dark': 'colors.info-dark',
+        'info-light': 'colors.info-light',
+        'info-contrast': 'colors.info-contrast',
+        'success-main': 'colors.success-main',
+        'success-dark': 'colors.success-dark',
+        'success-light': 'colors.success-light',
+        'success-contrast': 'colors.success-contrast',
+        'custom-color': '#00000099',
+        backgroundFooter: '#F8F9FF',
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config;
