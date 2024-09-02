@@ -21,6 +21,17 @@ declare global {
     username?: string;
     avatar?: string;
   }
+
+  type CampaignParams = {
+    product: string;
+    product_description: string;
+    duration: number;
+    tone: string;
+    example: string;
+    company_name: string;
+    intent: string;
+    unique_selling_points: string;
+  };
 }
 
 export {};
